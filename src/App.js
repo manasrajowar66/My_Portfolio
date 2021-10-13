@@ -4,6 +4,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import theme from "./theme";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/" component={HeroSection} exact />
         </Switch>
+        <Footer />
       </Router>
     </ThemeProvider>
   );

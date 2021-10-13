@@ -14,6 +14,9 @@ import UseAnimations from "react-useanimations";
 import scrollDown from "react-useanimations/lib/scrollDown";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import About from "./AboutSection";
+import Contact from "./Contact";
+import { Link as scrollLink } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -110,7 +113,14 @@ const HeroSection = () => {
               </Typography>
             </Grid>
             <Grid item style={{ marginTop: "1.5em" }}>
-              <Button variant="contained" className={classes.contactButton}>
+              <Button
+                variant="contained"
+                className={classes.contactButton}
+                component={scrollLink}
+                to="contact"
+                smooth={true}
+                duration={1000}
+              >
                 Contact Me
               </Button>
             </Grid>
@@ -140,6 +150,8 @@ const HeroSection = () => {
       </Grid>
       <Projects />
       <Skills />
+      <About />
+      <Contact />
     </>
   );
 };

@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     ...theme.typography.fontFamily,
     fontWeight: "400",
-    color: "#111",
+    color: "#fff",
     fontSize: "3.5em",
     letterSpacing: 1.5,
   },
@@ -79,6 +79,7 @@ const Projects = () => {
           paddingTop: "5em",
         }}
         className={classes.mainContainer}
+        id="project"
       >
         <Grid
           item

@@ -3,6 +3,7 @@ import { AppBar, Grid, Typography, useTheme } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
+import { Link as scrollLink } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   navlinkItem: {
@@ -82,6 +83,10 @@ const Header = () => {
                   variant="body2"
                   className={classes.navlinks}
                   style={{ color: navColor ? "#111" : "#fff" }}
+                  component={scrollLink}
+                  to="project"
+                  smooth={true}
+                  duration={500}
                 >
                   Projects
                 </Typography>
@@ -91,6 +96,10 @@ const Header = () => {
                   variant="body2"
                   className={classes.navlinks}
                   style={{ color: navColor ? "#111" : "#fff" }}
+                  component={scrollLink}
+                  to="about"
+                  smooth={true}
+                  duration={800}
                 >
                   About
                 </Typography>
@@ -100,6 +109,10 @@ const Header = () => {
                   variant="body2"
                   className={classes.navlinks}
                   style={{ color: navColor ? "#111" : "#fff" }}
+                  component={scrollLink}
+                  to="contact"
+                  smooth={true}
+                  duration={1000}
                 >
                   Contact
                 </Typography>
