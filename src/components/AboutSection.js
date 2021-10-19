@@ -135,9 +135,8 @@ const AboutSection = () => {
             }}
           >
             I build new projects and love to get more project ideas from others.
-            I am a fast learner and a good problem solver. While I am still a
-            college student, I still like to learn more about programming and
-            love to build new projects.
+            I am a fast learner and a good problem solver.I still like to learn
+            more about programming and love to build new projects.
           </Typography>
         </Grid>
       </Grid>
