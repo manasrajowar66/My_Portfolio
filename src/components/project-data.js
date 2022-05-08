@@ -24,7 +24,7 @@ const data = [
     describtion:
       "This project sorting visualizer is a very simple UI and it allows the users to select the sort algorithm, select the array size, and speed of the visualization.Uses technologies like React Js , Animations , Redux.",
     github: "https://github.com/manasrajowar66/Sorting_Visualizer",
-    website: "https://enigmatic-temple-90293.herokuapp.com/",
+    website: "https://sorting-visualizer-me.netlify.app/",
     img: sorting,
   },
   // {
